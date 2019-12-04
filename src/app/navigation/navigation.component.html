@@ -1,0 +1,19 @@
+<ng-container>
+    <mat-sidenav-container class="nav-container">
+        <mat-sidenav mode="side" opened>
+            <div class="text-center">
+                <h1 class="sidebar-name-title" style="margin-top: 25px">
+                    <a href="/">
+                        Colin Sanders
+                    </a>
+                </h1>
+            </div>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <mat-toolbar class="example-footer">Footer</mat-toolbar>
+</ng-container>
