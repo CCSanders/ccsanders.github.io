@@ -87,7 +87,15 @@
 }
 
 .content-section-skills{
-    
+    padding-top: 2em;
+    padding-bottom: 0em;
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+ngb-progressbar {
+    margin-top: 5rem;
 }
 
 .content-section-experience{

@@ -8,6 +8,7 @@ import { MatToolbarModule, MatSidenavModule, MatButtonModule, MatListModule, Mat
 
 //3rd party modules
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 //app modules
 import { AppComponent } from './app.component';
@@ -60,6 +61,7 @@ const routes: Routes = [
     MatListModule,
     MatIconModule,
     FontAwesomeModule,
+    NgbModule,
 
     RouterModule.forRoot(routes)
   ],
