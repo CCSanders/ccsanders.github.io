@@ -17,159 +17,25 @@
     <!--About me section. -->
     <div class="content-section-about">
         <div class="main-content-narrow">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row bottom-padded">
-                        <div class="col-md-12">
-                            <div class="about-me-text">
-                                <h2>About Me</h2>
-                                <hr>
-                                <p>
-                                    I am Colin Sanders, a software developer from Fort Worth, Texas.
-                                    I am currently studying Computer Science and Economics at the University of Alabama,
-                                    expected to graduate in May 2021. <br>
-                                    I have experience in full-stack web application development and video game
-                                    development, and I am interested in machine learning,
-                                    economic modelling, dev-team enablement, and just about every other technology
-                                    related topic. <br>
-                                    I love to code, I'm a great problem solver and quick learner, and I love to work
-                                    with other people! <br>
-                                    Please have a look at my past experience and projects, and feel free to contact me
-                                    below if you have any questions or just want to connect.
-                                    Have a great day!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <a href="/software" target="_blank">
-                                <div class="project-button color-1">
-                                    <div class="icon-1">
-                                        <fa-icon [icon]="faLaptopCode"></fa-icon>
-                                    </div>
-                                    <h3>Software Development</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="/games" target="_blank">
-                                <div class="project-button color-2">
-                                    <div class="icon-2">
-                                        <fa-icon [icon]="faGamepad"></fa-icon>
-                                    </div>
-                                    <h3>Game Development</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="/academia" target="_blank">
-                                <div class="project-button color-3">
-                                    <div class="icon-3">
-                                        <fa-icon [icon]="faChalkboard"></fa-icon>
-                                    </div>
-                                    <h3>Academia</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="/blog" target="_blank">
-                                <div class="project-button color-4">
-                                    <div class="icon-4">
-                                        <fa-icon [icon]="faPen"></fa-icon>
-                                    </div>
-                                    <h3>Blog</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <app-about-me></app-about-me>
         </div>
     </div>
     <!--Skills section. -->
     <div class="content-section-skills">
         <div class="main-content-narrow">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row bottom-padded">
-                        <div class="col-md-12">
-                            <div class="skills-text">
-                                <h2>Skills</h2>
-                                <hr>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h4>Java</h4>
-                            <p>
-                                <ngb-progressbar type="info" [value]="80"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>Javascript / Typescript</h4>
-                            <p>
-                                <ngb-progressbar type="success" [value]="60"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>MySQL / SQL Server</h4>
-                            <p>
-                                <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>C# / Dotnet</h4>
-                            <p>
-                                <ngb-progressbar type="info" [value]="70"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>HTML / CSS</h4>
-                            <p>
-                                <ngb-progressbar type="success" [value]="55"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>Unity3D / Game Design</h4>
-                            <p>
-                                <ngb-progressbar type="warning" [value]="80"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>C++ / C</h4>
-                            <p>
-                                <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>Angular</h4>
-                            <p>
-                                <ngb-progressbar type="success" [value]="80"></ngb-progressbar>
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h4>Agile Development</h4>
-                            <p>
-                                <ngb-progressbar type="warning" [value]="100"></ngb-progressbar>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <app-skills></app-skills>
         </div>
     </div>
     <!--Experience section. -->
     <div class="content-section-experience">
         <div class="main-content-narrow">
-
+            <app-experience></app-experience>
         </div>
     </div>
     <!--Contact section. -->
     <div class="content-section-contact">
         <div class="main-content-narrow">
-
+            
         </div>
     </div>
 </div>

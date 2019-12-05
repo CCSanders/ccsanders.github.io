@@ -18,6 +18,9 @@ import { SoftwareDevelopmentComponent } from './software-development/software-de
 import { GameDevelopmentComponent } from './game-development/game-development.component';
 import { AcademiaComponent } from './academia/academia.component';
 import { BlogComponent } from './blog/blog.component';
+import { ExperienceComponent } from './home/experience/experience.component';
+import { SkillsComponent } from './home/skills/skills.component';
+import { AboutMeComponent } from './home/about-me/about-me.component';
 
 const routes: Routes = [
   {
@@ -50,7 +53,10 @@ const routes: Routes = [
     SoftwareDevelopmentComponent,
     GameDevelopmentComponent,
     AcademiaComponent,
-    BlogComponent
+    BlogComponent,
+    ExperienceComponent,
+    SkillsComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
