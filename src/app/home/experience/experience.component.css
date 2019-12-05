@@ -1,0 +1,17 @@
+.bottom-padded{
+    padding-bottom: 1em;
+}
+
+mgl-timeline-entry-header{
+    box-shadow: 0px 0px 56px -8px #00000065;
+}
+
+mgl-timeline-entry-content{
+    box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.2);
+}
+
+mgl-timeline-entry-dot{
+    text-align: center; 
+    background-color: #c18fff;
+    color: #c18fff;
+}

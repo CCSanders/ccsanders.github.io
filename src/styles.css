@@ -9,3 +9,11 @@ body {
 .basic-container {
   padding: 30px;
 }
+
+mgl-timeline:not(.mobile) {
+  padding: 50px 20px;
+}
+
+mgl-timeline.mobile {
+  padding-right: 20px;
+}

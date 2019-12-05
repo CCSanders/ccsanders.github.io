@@ -9,6 +9,7 @@ import { MatToolbarModule, MatSidenavModule, MatButtonModule, MatListModule, Mat
 //3rd party modules
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 //app modules
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ExperienceComponent } from './home/experience/experience.component';
 import { SkillsComponent } from './home/skills/skills.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
+import { ContactMeComponent } from './home/contact-me/contact-me.component';
 
 const routes: Routes = [
   {
@@ -56,7 +58,8 @@ const routes: Routes = [
     BlogComponent,
     ExperienceComponent,
     SkillsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
@@ -68,6 +71,7 @@ const routes: Routes = [
     MatIconModule,
     FontAwesomeModule,
     NgbModule,
+    MglTimelineModule,
 
     RouterModule.forRoot(routes)
   ],
