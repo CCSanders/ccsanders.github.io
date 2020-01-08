@@ -1,0 +1,5 @@
+.main-content-body{
+    width: calc(100% - 300px);
+    box-sizing: border-box;
+    padding: 1em;
+}

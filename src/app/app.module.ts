@@ -24,6 +24,7 @@ import { ExperienceComponent } from './home/experience/experience.component';
 import { SkillsComponent } from './home/skills/skills.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { ContactMeComponent } from './home/contact-me/contact-me.component';
+import { WipComponent } from './shared/wip/wip.component';
 
 const routes: Routes = [
   {
@@ -60,7 +61,8 @@ const routes: Routes = [
     ExperienceComponent,
     SkillsComponent,
     AboutMeComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    WipComponent
   ],
   imports: [
     BrowserModule,
