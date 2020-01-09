@@ -11,20 +11,26 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <form>
+                <form (ngSubmit)="onSubmit(contactForm.value)" #contactForm="ngForm">
                     <div class="field">
-                        <input type="text" name="name" class="input" placeholder="Name">
+                        <input type="text" name="name" class="input" placeholder="Name" [(ngModel)]="name" required #nameInput="ngModel">
                     </div>
 
-                    <div class="field">
-                        <input type="email" name="email" class="input" placeholder="Email">
-                    </div>
+                    <div class="error-message" *ngIf="nameInput.touched && nameInput.invalid">Name is required.</div>
 
                     <div class="field">
-                        <textarea class="textarea" name="message" placeholder="Message"></textarea>
+                        <input type="email" name="email" class="input" placeholder="Email" [(ngModel)]="email" required email #emailInput="ngModel">
                     </div>
 
-                    <button type="submit" class="button is-danger is-large">Send</button>
+                    <div class="error-message" *ngIf="emailInput.touched && emailInput.invalid">Email must be valid</div>
+
+                    <div class="field">
+                        <textarea class="textarea" name="message" placeholder="Message" [(ngModel)]="message" required #messageInput="ngModel"></textarea>
+                    </div>
+
+                    <div class="error-message" *ngIf="messageInput.touched && messageInput.invalid">Message is required.</div>
+
+                    <button type="submit" class="button" (click)="contactForm.reset()" [disabled]="!contactForm.form.valid">Submit</button>
                 </form>
             </div>
         </div>

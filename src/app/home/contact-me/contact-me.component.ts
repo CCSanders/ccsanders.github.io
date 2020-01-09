@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.css']
 })
-export class ContactMeComponent implements OnInit {
+export class ContactMeComponent {
 
-  constructor() { }
+  name: string;
+  email: string;
+  message: string;
 
-  ngOnInit() {
+  constructor() {
+
   }
 
+  onSubmit(formData){
+    alert("Message sent. I'll be in touch soon!");
+  }
 }
