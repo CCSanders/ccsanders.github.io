@@ -11,7 +11,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <form (ngSubmit)="onSubmit(contactForm.value)" #contactForm="ngForm">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="field">
                         <input type="text" name="name" class="input" placeholder="Name" [(ngModel)]="name" required #nameInput="ngModel">
                     </div>
@@ -30,7 +30,7 @@
 
                     <div class="error-message" *ngIf="messageInput.touched && messageInput.invalid">Message is required.</div>
 
-                    <button type="submit" class="button" (click)="contactForm.reset()" [disabled]="!contactForm.form.valid">Submit</button>
+                    <button type="submit" class="button" [disabled]="!contactForm.form.valid">Submit</button>
                 </form>
             </div>
         </div>

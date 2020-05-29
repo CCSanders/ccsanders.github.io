@@ -1,7 +1,8 @@
+/*
 .main-content-body{
     width: calc(100% - 300px);
     box-sizing: border-box;
-}
+}*/
 
 .main-content-narrow{
     padding: 0 4.5em;
@@ -21,7 +22,7 @@
 
 .content-section-skills{
     padding-top: 2em;
-    padding-bottom: 0em;
+    padding-bottom: 1em;
     clear: both;
     width: 100%;
     display: block;
@@ -29,7 +30,7 @@
 
 .content-section-experience{
     padding-top: 2em;
-    padding-bottom: 0em;
+    padding-bottom: 1em;
     clear: both;
     width: 100%;
     display: block;
@@ -37,8 +38,12 @@
 
 .content-section-contact{
     padding-top: 2em;
-    padding-bottom: 0em;
+    padding-bottom: 1em;
     clear: both;
     width: 100%;
     display: block;
+}
+
+p {
+    margin-bottom: 1.5em;
 }

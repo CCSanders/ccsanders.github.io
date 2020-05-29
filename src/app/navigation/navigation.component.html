@@ -1,6 +1,10 @@
 <ng-container>
+    <mat-toolbar color="primary">
+        <h1>Colin Sanders Web Portfolio</h1>
+    </mat-toolbar>
+    
     <mat-sidenav-container class="nav-container">
-        <mat-sidenav mode="side" opened>
+        <mat-sidenav #sidenav [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
             <div class="text-center">
                 <h1 class="sidebar-name-title" style="margin-top: 25px">
                     <a href="/">

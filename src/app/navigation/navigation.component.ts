@@ -9,9 +9,14 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 export class NavigationComponent implements OnInit {
 
   menuIcon: any = faBars;
+  screenWidth: number;
 
   constructor() { }
 
   ngOnInit() {
+    this.screenWidth = window.innerWidth;
+    window.onresize = () => {
+      this.screenWidth = window.innerWidth
+    };
   }
 }
