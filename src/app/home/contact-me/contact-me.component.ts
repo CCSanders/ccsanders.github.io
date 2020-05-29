@@ -3,6 +3,7 @@ import { FormBuilder, Validators, NgForm } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import * as AWS from 'aws-sdk';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact-me',
@@ -21,7 +22,7 @@ export class ContactMeComponent {
 
   onSubmit(f: NgForm){
     //this is bad practice but its ok since it can only insert into my dynamo db. 
-    const cred = new AWS.Credentials('AKIAQD43L6WH6TIOCJ2G', '6QTK6g3aKegE16xMHQUjsJsKeeSUHoflHbo5lMKC');
+    const cred = new AWS.Credentials(environment.pk, environment.sk);
     AWS.config.credentials = cred;
     AWS.config.update({region: 'us-east-1'});
 
