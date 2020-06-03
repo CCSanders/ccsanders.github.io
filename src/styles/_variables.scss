@@ -1,1 +1,31 @@
-$theme-color-primary: rgb(135, 30, 221);
+// Bootstrap customizations
+
+// Theme Colors
+$theme-color-primary:   rgb(211, 211, 211);
+$theme-color-secondary: rgb(118, 116, 121);
+$theme-color-danger:    rgb(168, 47, 47);
+$theme-color-success:   rgb(88, 211, 83);
+$theme-color-warning:   rgb(247, 222, 83);
+$theme-color-info:      rgb(166, 202, 243);
+
+$theme-colors: (
+	"primary":    $theme-color-primary,
+	"secondary":  $theme-color-secondary,
+	"danger":     $theme-color-danger,
+	"success":    $theme-color-success,
+	"warning":    $theme-color-warning,
+	"info":       $theme-color-info
+);
+
+$red:        rgb(223, 46, 63);
+$orange:     rgb(235, 138, 12);
+$yellow:     rgb(247, 230, 80);
+$green:      rgb(77, 192, 86);
+$blue:       rgb(56, 56, 211);
+$indigo:     rgb(48, 19, 117);
+$purple:     rgb(162, 49, 255);
+$teal:       rgb(72, 218, 223);
+$white:      rgb(255, 255, 255);
+$light-gray: rgb(192, 192, 192);
+$dark-gray:  rgb(95, 95, 95);
+$black:      rgb(0, 0 ,0);

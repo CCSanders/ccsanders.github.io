@@ -34,19 +34,25 @@ import { WipComponent } from './shared/wip/wip.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'software',
-    component: SoftwareDevelopmentComponent
-  },
-  {
-    path: 'games',
-    component: GameDevelopmentComponent
-  },
-  {
-    path: 'academia',
-    component: AcademiaComponent
+    component: NavigationComponent,
+    children: [
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'software',
+        component: SoftwareDevelopmentComponent
+      },
+      {
+        path: 'games',
+        component: GameDevelopmentComponent
+      },
+      {
+        path: 'academia',
+        component: AcademiaComponent
+      },
+    ]
   },
   {
     path: 'blog',
@@ -77,7 +83,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatButtonModule, 
+    MatButtonModule,
     MatListModule,
     MatIconModule,
     FontAwesomeModule,
