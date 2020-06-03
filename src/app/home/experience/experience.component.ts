@@ -4,7 +4,7 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
 

@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
-  styleUrls: ['./contact-me.component.css']
+  styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent {
 

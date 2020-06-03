@@ -4,7 +4,7 @@ import { NgbProgressbarModule, NgbProgressbarConfig } from '@ng-bootstrap/ng-boo
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css'],
+  styleUrls: ['./skills.component.scss'],
   providers: [NgbProgressbarConfig]
 })
 export class SkillsComponent {
