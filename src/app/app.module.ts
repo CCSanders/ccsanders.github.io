@@ -30,6 +30,7 @@ import { SkillsComponent } from './home/skills/skills.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { ContactMeComponent } from './home/contact-me/contact-me.component';
 import { WipComponent } from './shared/wip/wip.component';
+import { ProjectCardComponent } from './home/about-me/project-card/project-card.component';
 
 const routes: Routes = [
   {
@@ -73,7 +74,8 @@ const routes: Routes = [
     SkillsComponent,
     AboutMeComponent,
     ContactMeComponent,
-    WipComponent
+    WipComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
