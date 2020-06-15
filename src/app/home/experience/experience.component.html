@@ -1,69 +1,33 @@
-<div class="row">
-    <div class="col-md-12">
-        <div class="row bottom-padded">
-            <div class="col-md-12">
-                <h2>Work Experience</h2>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <mgl-timeline>
-                    <mgl-timeline-entry>
-                        <mgl-timeline-entry-header>
-                            <h3>Unity Technologies Student Ambassador</h3>
-                            <h6>October 2019 - Present</h6>
-                        </mgl-timeline-entry-header>
-                        <mgl-timeline-entry-content>
-                            <p>
-                                My goal as a Unity Student Ambassador is to support the game development scene at the University of Alabama
-                                through organizing and running workshops and game-jams. As of December 2019, I have led one workshop titled 
-                                "Introduction to Game Development with Unity", and am in the process of planning an intermediate-level 
-                                game-dev workshop and a week-long game-jam for early 2020.
-                            </p>
-                        </mgl-timeline-entry-content>
-                        <mgl-timeline-entry-dot [size]="size"></mgl-timeline-entry-dot>
-                    </mgl-timeline-entry>
-
-                    <mgl-timeline-entry>
-                        <mgl-timeline-entry-header>
-                            <h3>Lockheed Martin </h3>
-                            <h5>Software Engineering Intern</h5>
-                            <h6>June 2019 - December 2019</h6>
-                        </mgl-timeline-entry-header>
-                        <mgl-timeline-entry-content>
-                            <p>
-                                Worked on an internally developed Lockheed Marin web application that provides situational awareness 
-                                for all of Aeronautics production and support organizations. 
-                                Worked as an Agile developerand successfully delivered capability 
-                                to end-users on a weekly basis. Actively participated in SAFe ceremonies 
-                                (Scrums, Sprint Planning and Review, PI Planning). Contributed to CI/CD, Cloud Integrations, and Software 
-                                Factory enablers for PI3 and PI4 2020 deliveries. 
-                                Developed functionality across the whole stackof the web-app, which was built with an Angular frontend, 
-                                Dotnet Core API, and SQLServer backend.  Led a developer team of interns on a stretch assignment to create an 
-                                indoor mapping and navigation application for Lockheed Martin Facilities. Team used similar Agile principles, 
-                                and I acted as the product owner and Scrum Master.
-                            </p>
-                        </mgl-timeline-entry-content>
-                        <mgl-timeline-entry-dot [size]="size"> </mgl-timeline-entry-dot>
-                    </mgl-timeline-entry>
-
-                    <mgl-timeline-entry>
-                        <mgl-timeline-entry-header>
-                                <h3>Lockheed Martin </h3>
-                                <h5>Software Engineering Intern</h5>
-                            <h6>June 2018 - August 2018</h6>
-                        </mgl-timeline-entry-header>
-                        <mgl-timeline-entry-content>
-                            My first real software engineering position. I was part of an internal applications team that supported the parts and 
-                            tooling division of the F35 Fighter Jet Program. My primary responsibility was extending the functionality of in internal Lockeed Martin program
-                            to better catch unknown error messages. The stack for this including a JavaScript / HTML frontend, a Java web service API, and a backend that included
-                            SQL data servers and ActiveMQ queues to manage and track the data. I was offered a returning position for the Summer 2019.
-                        </mgl-timeline-entry-content>
-                        <mgl-timeline-entry-dot [size]="size"></mgl-timeline-entry-dot>
-                    </mgl-timeline-entry>
-                </mgl-timeline>
-            </div>
-        </div>
-    </div>
-</div>
+<h2 class="mb-5">Experience</h2>
+<!-- TODO: Make these dynamically generated. Potentially add an API -->
+<app-experience-entry
+    title="Software Development Intern Sr."
+    timePeriod="June 2019 - Present"
+    company="Lockheed Martin"
+    description="Worked on an internally developed Lockheed Martin web application that provides situational awareness for all of Aeronautics production and support organizations. 
+    Worked as an Agile developer and successfully delivered capability to end-users on a weekly basis. Actively participated in SAFe ceremonies 
+    (Scrums, Spring Planning and Review, PI Planning). Contributed to CI/CD, Cloud Integrations, and Software Factory enablers for PI3 and PI4 2019 deliveries 
+    and PI2 PI3 2020 deliveries. Developed functionality across the whole stack of the web-app, which was built with an Angular frontend, .NET Core API, 
+    and SQL Server backend. Led a developer team of interns on a stretch assignment to create an indoor mapping and navigation application for Lockheed Martin 
+    Facilities. Team used similar Agile principles, and I acted as the product owner and Scrum Master. After end of internship, I was kept a part of the team 
+    and worked part-time remotely throughout the fall semester of 2019, and then began working again full-time in May 2020 with the same team."
+    >
+</app-experience-entry>
+<app-experience-entry
+    title="Campus Student Ambassador"
+    timePeriod="October 2019 - Present"
+    company="Unity"
+    description="My goal as a Unity Student Ambassador is to support the game development scene at the University of Alabama through organizing and running 
+    workshops and game-jams. As of December 2019, I have led one workshop titled &quot;Introduction to Game Development with Unity&quot;, and am in the process 
+    of planning an intermediate-level game-dev workshop and a week-long game-jam for early 2020."
+    >
+</app-experience-entry>
+<app-experience-entry
+    title="Software Development Intern"
+    timePeriod="June 2018 - August 2018"
+    company="Lockheed Martin"
+    description="Worked on software relating to and supporting the F35 Fighter Jet Program. I studied a variety of different enterprise development patterns 
+    used by LM. My main responsibility was extending the functionality of internal Lockheed Martin software by creating a Java backend web service and JavaScript / HTML 
+    frontend. The backend connected to ActiveMQ queues and Lockheed Martin data servers to manage and track data messages."
+    >
+</app-experience-entry>

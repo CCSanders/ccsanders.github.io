@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
@@ -11,12 +12,20 @@ export class NavigationComponent implements OnInit {
   menuIcon: any = faBars;
   screenWidth: number;
 
-  constructor() { }
+  constructor(private _router : Router) { 
+  }
 
   ngOnInit() {
     this.screenWidth = window.innerWidth;
     window.onresize = () => {
       this.screenWidth = window.innerWidth
     };
+  }
+
+  scrollTo(selector: any){
+    const element = document.querySelector(selector);
+    if(element){
+      element.scrollIntoView({behavior: "smooth"});
+    }
   }
 }

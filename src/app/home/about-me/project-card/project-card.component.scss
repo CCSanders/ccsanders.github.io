@@ -19,19 +19,19 @@
 }
 
 .project-button.color-1{
-    border-bottom: 2px solid #0256de;
+    border-bottom: 2px solid $theme-accent-color-1;
 }
 
 .project-button.color-2{
-    border-bottom: 2px solid #b80909;
+    border-bottom: 2px solid $theme-accent-color-2;
 }
 
 .project-button.color-3{
-    border-bottom: 2px solid #8200b1;
+    border-bottom: 2px solid $theme-accent-color-3;
 }
 
 .project-button.color-4{
-    border-bottom: 2px solid #71b800;
+    border-bottom: 2px solid $theme-accent-color-4;
 }
 
 .project-button.color-3 h3 {
@@ -46,26 +46,26 @@
     display: block;
     margin-bottom: 20px;
     font-size: 30px;
-    color: #0256de
+    color: $theme-accent-color-1;
 }
 
 .project-button .icon-2{
     display: block;
     margin-bottom: 20px;
     font-size: 30px;
-    color: #b80909
+    color: $theme-accent-color-2;
 }
 
 .project-button .icon-3{
     display: block;
     margin-bottom: 20px;
     font-size: 30px;
-    color: #8200b1
+    color: $theme-accent-color-3;
 }
 
 .project-button .icon-4{
     display: block;
     margin-bottom: 20px;
     font-size: 30px;
-    color: #71b800
+    color: $theme-accent-color-4;
 }

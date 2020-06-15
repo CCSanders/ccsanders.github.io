@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MglTimelineModule } from 'angular-mgl-timeline';
 
 @Component({
   selector: 'app-experience',
@@ -7,8 +6,6 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
-
-  size: number = 50;
 
   constructor() { }
 

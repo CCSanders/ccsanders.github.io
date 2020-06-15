@@ -1,40 +1,35 @@
-<div class="row">
-    <div class="col-md-12">
-        <div class="row bottom-padded">
-            <div class="col-md-12">
-                <div class="about-me-text">
-                    <h2>About Me</h2>
-                    <hr>
-                    <p>
-                        I am Colin Sanders, a software developer from Fort Worth, Texas.
-                        I am currently studying Computer Science and Economics at the University of Alabama,
-                        expected to graduate in May 2021. <br>
-                        I have experience in full-stack web application development and video game
-                        development, and I am interested in machine learning,
-                        economic modelling, dev-team enablement, and just about every other technology
-                        related topic. <br>
-                        I love to code, I'm a great problem solver and quick learner, and I love to work
-                        with other people! <br>
-                        Please have a look at my past experience and projects, and feel free to contact me
-                        below if you have any questions or just want to connect.
-                        Have a great day!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div *ngIf="shouldShowProjectCards" class="row">
-            <div class="col-md-3">
-                <app-project-card route="software" title="Software Development" color="1" [icon]="faLaptopCode"></app-project-card>
-            </div>
-            <div class="col-md-3">
-                <app-project-card route="games" title="Game Development" color="2" [icon]="faGamepad"></app-project-card>
-            </div>
-            <div class="col-md-3">
-                <app-project-card route="academia" title="Academia" color="3" [icon]="faChalkboard"></app-project-card>
-            </div>
-            <div class="col-md-3">
-                <app-project-card route="blog" title="Blog" color="4" [icon]="faPen"></app-project-card>
-            </div>
-        </div>
+<div class="row bottom-padded">
+    <div class="about-me-text">
+        <h1 class="mb-1">Colin <span class="text-accent-color-2">Sanders</span></h1>
+        <div class="subheader mb-5">Curious · Committed · Complete</div>
+        <p class="lead mb-5">
+            I am Colin Sanders, a software developer from Fort Worth, Texas.
+            I am currently studying Computer Science and Economics at the University of Alabama,
+            expected to graduate in May 2021. <br>
+            I have experience in full-stack web application development and video game
+            development, and I am interested in machine learning,
+            economic modelling, dev-team enablement, and just about every other technology
+            related topic. <br>
+            I love to code, I'm a great problem solver and quick learner, and I love to work
+            with other people! <br>
+            Please have a look at my past experience and projects, and feel free to contact me
+            below if you have any questions or just want to connect.
+            Have a great day!
+        </p>
+    </div>
+</div>
+<div *ngIf="shouldShowProjectCards" class="row">
+    <div class="col-md-3">
+        <app-project-card route="software" title="Software Development" color="1" [icon]="faLaptopCode">
+        </app-project-card>
+    </div>
+    <div class="col-md-3">
+        <app-project-card route="games" title="Game Development" color="2" [icon]="faGamepad"></app-project-card>
+    </div>
+    <div class="col-md-3">
+        <app-project-card route="academia" title="Academia" color="3" [icon]="faChalkboard"></app-project-card>
+    </div>
+    <div class="col-md-3">
+        <app-project-card route="blog" title="Blog" color="4" [icon]="faPen"></app-project-card>
     </div>
 </div>

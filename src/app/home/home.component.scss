@@ -1,49 +1,34 @@
-/*
-.main-content-body{
-    width: calc(100% - 300px);
-    box-sizing: border-box;
-}*/
-
-.main-content-narrow{
-    padding: 0 4.5em;
-}
-
 .bottom-padded{
     padding-bottom: 1em;
-}
-
-.content-section-about{
-    padding-top: 2em;
-    padding-bottom: 0em;
-    clear: both;
-    width: 100%;
-    display: block;
-}
-
-.content-section-skills{
-    padding-top: 2em;
-    padding-bottom: 1em;
-    clear: both;
-    width: 100%;
-    display: block;
-}
-
-.content-section-experience{
-    padding-top: 2em;
-    padding-bottom: 1em;
-    clear: both;
-    width: 100%;
-    display: block;
-}
-
-.content-section-contact{
-    padding-top: 2em;
-    padding-bottom: 1em;
-    clear: both;
-    width: 100%;
-    display: block;
 }
 
 p {
     margin-bottom: 1.5em;
 }
+
+.content-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 75rem;
+  }
+  .content-section .main-content {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .content-section {
+      min-height: 100vh;
+    }
+  }
+  @media (min-width: 992px) {
+    .content-section {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }

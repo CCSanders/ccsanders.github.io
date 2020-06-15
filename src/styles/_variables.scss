@@ -3,8 +3,8 @@
 // Theme Colors
 $theme-color-primary:   rgb(211, 211, 211);
 $theme-color-secondary: rgb(118, 116, 121);
-$theme-color-danger:    rgb(168, 47, 47);
-$theme-color-success:   rgb(88, 211, 83);
+$theme-color-danger:    rgb(221, 94, 94);
+$theme-color-success:   rgb(100, 184, 97);
 $theme-color-warning:   rgb(247, 222, 83);
 $theme-color-info:      rgb(166, 202, 243);
 
@@ -19,6 +19,12 @@ $theme-colors: (
 
 $theme-bg-color-primary: rgb(59, 59, 61);
 $theme-bg-color-secondary: rgb(52, 51, 53);
+$theme-bg-color-tertiary: rgba(255, 255, 255, 0.2);
+
+$theme-accent-color-1: rgb(68, 118, 255);
+$theme-accent-color-2: #BB86FC;
+$theme-accent-color-3: #CF6679;
+$theme-accent-color-4: #03DAC6;
 
 $red:        rgb(223, 46, 63);
 $orange:     rgb(235, 138, 12);
