@@ -27,8 +27,9 @@ export class NavigationComponent implements OnInit {
     const element = document.querySelector(selector);
     const navbar = document.getElementById("sideNav");
     
-    //if the navbar exists, we should account for it when scrolling to the item we want and then close it. 
-    if(navbar){
+    if(this.screenWidth >= 768){
+      element.scrollIntoView({behavior: "smooth"});
+    }else if(navbar){ //if the navbar exists, we should account for it when scrolling to the item we want and then close it. 
       const offset = element.getBoundingClientRect().top - navbar.getBoundingClientRect().bottom + 56;
       window.scrollTo({top: offset, behavior: "smooth"});
       this.isCollapsed = true;
