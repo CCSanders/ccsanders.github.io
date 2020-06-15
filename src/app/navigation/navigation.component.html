@@ -13,13 +13,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <div *ngIf="_router.url == '/'">
+                <div *ngIf="router.url == '/'">
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#about')">About</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#skills')">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#experience')">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#contact')">Contact</a></li>
                 </div>
-                <div *ngIf="_router.url != '/'">
+                <div *ngIf="router.url != '/'">
                     <li class="nav-item"><a class="nav-link" routerLink="/" (click)="scrollTo('#about')">Home</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="/blog" (click)="scrollTo('#contact')">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="/software" (click)="scrollTo('#skills')">Software</a></li>

@@ -12,7 +12,7 @@ export class NavigationComponent implements OnInit {
   menuIcon: any = faBars;
   screenWidth: number;
 
-  constructor(private _router : Router) { 
+  constructor(public router : Router) { 
   }
 
   ngOnInit() {
