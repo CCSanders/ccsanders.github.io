@@ -1,3 +1,8 @@
 <div class="main-content-body">
-	<h1 class="m-5">Software <span class="text-accent-color-2">Projects</span></h1>
+	<div class="project-container">
+		<h1>Software <span class="text-accent-color-2">Projects</span></h1>
+		<div class="projects">
+			<app-software-project-card *ngFor="let project of projects" [project]="project"></app-software-project-card>
+		</div>
+	</div>
 </div>

@@ -35,9 +35,10 @@
 
 @media (max-width: 400px) {
   .navbar-brand {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }
+
 
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -149,8 +150,8 @@
 .navbar-expand-sm > .container-md,
 .navbar-expand-sm > .container-lg,
 .navbar-expand-sm > .container-xl {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 @media (min-width: 576px) {
@@ -191,8 +192,8 @@
 .navbar-expand-md > .container-md,
 .navbar-expand-md > .container-lg,
 .navbar-expand-md > .container-xl {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -233,8 +234,8 @@
 .navbar-expand-lg > .container-md,
 .navbar-expand-lg > .container-lg,
 .navbar-expand-lg > .container-xl {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 @media (min-width: 992px) {

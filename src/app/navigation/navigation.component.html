@@ -19,17 +19,17 @@
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#contact')">Contact</a></li>
                 </div>
                 <div *ngIf="router.url != '/'">
-                    <li class="nav-item"><a class="nav-link" routerLink="/" (click)="scrollTo('#about')">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/blog" (click)="scrollTo('#contact')">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/software" (click)="scrollTo('#skills')">Software</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/games" (click)="scrollTo('#experience')">Games</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/academia" (click)="scrollTo('#contact')">Academia</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/software">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/games">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/academia">Academia</a></li>
                 </div>
             </ul>
         </div>
     </nav>
 
-    <div class="container-fluid p-0" id="page-top">
+    <div class="container-fluid" id="page-top">
         <router-outlet></router-outlet>
     </div>
 </div>

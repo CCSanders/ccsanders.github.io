@@ -1,0 +1,52 @@
+.projects {
+	display: grid;
+	gap: 15px;
+	position: relative;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	margin-top: 50px;
+	width: 100%
+}
+
+@media(max-width: 62.5em){
+	.projects {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}
+
+.project-container {
+	padding: 50px 0px;
+	display: flex;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0px auto;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@media(max-width: 48em){
+	.project-container {
+		padding: 30px 0px 10px 0px;
+	}
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+app-software-project-card{
+	transition-delay: 0ms;
+	visibility: visible;
+	opacity: 1;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+	transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+h1 {
+	margin: 0px auto;
+}
+
+@media(max-width: 48em){
+	h1 {
+		font-size: 32px;
+	}
+}

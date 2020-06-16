@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SoftwareService } from '../services/software.service';
+import { SoftwareProjectModel } from './models/software-project.model';
+
 @Component({
   selector: 'app-software',
   templateUrl: './software.component.html',
@@ -7,11 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SoftwareComponent implements OnInit {
 
-  public projects : any[]
+  public projects : SoftwareProjectModel[]
 
-  constructor() { }
+  constructor(public softwareService: SoftwareService) { }
 
   ngOnInit() {
+    this.projects = this.softwareService.getProjects();
   }
 
 }

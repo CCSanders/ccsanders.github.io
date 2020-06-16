@@ -1,0 +1,23 @@
+<div class="project-inner">
+	<header>
+		<!--
+				<div class="project-header">
+					Could put stuff here for like icons and possibly git links
+					See: https://brittanychiang.com/#projects
+				</div>
+				-->
+		<h5 class="project-title">
+			{{ project.title }}
+		</h5>
+		<div class="project-desc">
+			<p> {{ project.description }} </p>
+		</div>
+	</header>
+	<footer>
+		<ul class="project-tech">
+			<li *ngFor="let tech of project.techStack">
+				{{ tech }}
+			</li>
+		</ul>
+	</footer>
+</div>

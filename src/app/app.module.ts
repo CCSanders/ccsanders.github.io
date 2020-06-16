@@ -17,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 //app modules
+//TODO CONVERT THESE INTO RESPECTIVE MODULES
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
@@ -31,6 +32,12 @@ import { ContactMeComponent } from './home/contact-me/contact-me.component';
 import { WipComponent } from './shared/wip/wip.component';
 import { NavCardComponent } from './home/about-me/nav-card/nav-card.component';
 import { ExperienceEntryComponent } from './home/experience/experience-entry/experience-entry.component';
+import { SoftwareProjectCardComponent } from './software/software-project-card/software-project-card.component';
+import { SoftwareProjectDetailsComponent } from './software/software-project-details/software-project-details.component';
+import { DataService } from './services/data.service';
+import { GamesService } from './services/games.service';
+import { SoftwareService } from './services/software.service';
+import { RouterOutletComponent } from './shared/router-outlet/router-outlet.component';
 
 const routes: Routes = [
   {
@@ -43,7 +50,17 @@ const routes: Routes = [
       },
       {
         path: 'software',
-        component: SoftwareComponent
+        component: RouterOutletComponent,
+        children: [
+          {
+            path: '',
+            component: SoftwareComponent
+          },
+          {
+            path: ':projectId',
+            component: SoftwareProjectDetailsComponent
+          }
+        ]
       },
       {
         path: 'games',
@@ -76,7 +93,10 @@ const routes: Routes = [
     ContactMeComponent,
     WipComponent,
     NavCardComponent,
-    ExperienceEntryComponent
+    ExperienceEntryComponent,
+    SoftwareProjectCardComponent,
+    SoftwareProjectDetailsComponent,
+    RouterOutletComponent
   ],
   imports: [
     BrowserModule,
@@ -94,7 +114,11 @@ const routes: Routes = [
 
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    DataService,
+    SoftwareService,
+    GamesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

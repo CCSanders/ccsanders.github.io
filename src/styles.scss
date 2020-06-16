@@ -69,14 +69,6 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 576px) {
-  h1 {font-size: 3rem;}
-}
-
-@media (max-width: 768px) {
-  h1 {font-size: 4rem;}
-}
-
 h2 {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -103,6 +95,54 @@ h6 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+  }
+  h5 {
+    text-align: center;
+  }
+  .subheader {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {font-size: 3rem;}
+  h2 {font-size: 2rem;}
+  h3 {font-size: 1.5rem;}
+}
+
+@media (max-width: 420px) {
+  .subheader {
+    font-size: 1rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
 }
 
 p {
@@ -242,6 +282,10 @@ ul ol {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+}
+
+.card {
+  background-color: $theme-bg-color-secondary;
 }
 
 
