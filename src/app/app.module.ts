@@ -20,8 +20,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
-import { SoftwareDevelopmentComponent } from './software-development/software-development.component';
-import { GameDevelopmentComponent } from './game-development/game-development.component';
+import { SoftwareComponent } from './software/software.component';
+import { GamesComponent } from './games/games.component';
 import { AcademiaComponent } from './academia/academia.component';
 import { BlogComponent } from './blog/blog.component';
 import { ExperienceComponent } from './home/experience/experience.component';
@@ -29,7 +29,7 @@ import { SkillsComponent } from './home/skills/skills.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { ContactMeComponent } from './home/contact-me/contact-me.component';
 import { WipComponent } from './shared/wip/wip.component';
-import { ProjectCardComponent } from './home/about-me/project-card/project-card.component';
+import { NavCardComponent } from './home/about-me/nav-card/nav-card.component';
 import { ExperienceEntryComponent } from './home/experience/experience-entry/experience-entry.component';
 
 const routes: Routes = [
@@ -43,11 +43,11 @@ const routes: Routes = [
       },
       {
         path: 'software',
-        component: SoftwareDevelopmentComponent
+        component: SoftwareComponent
       },
       {
         path: 'games',
-        component: GameDevelopmentComponent
+        component: GamesComponent
       },
       {
         path: 'academia',
@@ -66,8 +66,8 @@ const routes: Routes = [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    SoftwareDevelopmentComponent,
-    GameDevelopmentComponent,
+    SoftwareComponent,
+    GamesComponent,
     AcademiaComponent,
     BlogComponent,
     ExperienceComponent,
@@ -75,7 +75,7 @@ const routes: Routes = [
     AboutMeComponent,
     ContactMeComponent,
     WipComponent,
-    ProjectCardComponent,
+    NavCardComponent,
     ExperienceEntryComponent
   ],
   imports: [
