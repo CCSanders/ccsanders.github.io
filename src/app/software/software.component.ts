@@ -11,6 +11,8 @@ import { SoftwareProjectModel } from './models/software-project.model';
 export class SoftwareComponent implements OnInit {
 
   public projects : SoftwareProjectModel[]
+  public showAll : boolean = false;
+  public initialShowCount: number = 6;
 
   constructor(public softwareService: SoftwareService) { }
 

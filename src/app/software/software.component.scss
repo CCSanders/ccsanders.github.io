@@ -1,3 +1,5 @@
+@import 'variables';
+
 .projects {
 	display: grid;
 	gap: 15px;
@@ -49,4 +51,25 @@ h1 {
 	h1 {
 		font-size: 32px;
 	}
+}
+
+button {
+	background-color: $theme-bg-color-tertiary;
+	border: 2px solid $theme-accent-color-2;
+	border-radius: 3px;
+	font-size: 15px;
+	line-height: 1px;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	margin: 50px auto 0px;
+}
+
+@media(max-width: 62.5em){
+	button {
+		margin: 25px auto 10px;
+	}
+}
+  
+button:hover{
+	background-color: $theme-bg-color-4;
 }

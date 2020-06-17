@@ -40,6 +40,12 @@ export class SoftwareService {
       techStack: new Array("C++")
     },
     {
+      id : "fbla-coding-programming",
+      title : "FBLA Coding & Programming Competition Project",
+      description : "Future Business Leaders of America Coding & Programming competition project. Employee & POS Software with proto-Cloud Support",
+      techStack: new Array("Java", "SQL")
+    },
+    {
       id : "kenaston-proj",
       title : "AP Computer Science Extra Credit Project",
       description : "My first extracurricular project in high school. Notifications phone app for teacher's church.",
