@@ -3,7 +3,7 @@
         <a class="navbar-brand" routerLink="" (click)="scrollTo('#page-top')">
             <span class="d-block d-lg-none">Colin Sanders Portfolio - Home</span>
             <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/profile.jpg" alt="" />
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/profile.png" alt="" />
             </span>
         </a>
         <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
@@ -12,18 +12,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ collapse: isCollapsed }">
             <ul class="navbar-nav">
-                <div *ngIf="router.url == '/'">
+                <div *ngIf="router.url == '/' && screenWidth >= 768">
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#about')">About</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#skills')">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#experience')">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" routerLink="" (click)="scrollTo('#contact')">Contact</a></li>
                 </div>
-                <div *ngIf="router.url != '/'">
-                    <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/software">Software</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/games">Games</a></li>
-                    <li class="nav-item"><a class="nav-link" routerLink="/academia">Academia</a></li>
+                <div *ngIf="router.url != '/' || this.screenWidth < 768">
+                    <li class="nav-item"><a class="nav-link" routerLink="/" (click)="this.isCollapsed = true">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/blog" (click)="this.isCollapsed = true">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/software" (click)="this.isCollapsed = true">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/games" (click)="this.isCollapsed = true">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/academia" (click)="this.isCollapsed = true">Academia</a></li>
                 </div>
             </ul>
         </div>

@@ -75,6 +75,14 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent
+  },
+  {
+    path: 'assets/resume.pdf', 
+    redirectTo: '../assets/resume.pdf'
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 

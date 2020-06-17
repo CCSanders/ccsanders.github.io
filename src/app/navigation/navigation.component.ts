@@ -19,7 +19,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
     this.screenWidth = window.innerWidth;
     window.onresize = () => {
-      this.screenWidth = window.innerWidth
+      this.screenWidth = window.innerWidth;
     };
   }
 
