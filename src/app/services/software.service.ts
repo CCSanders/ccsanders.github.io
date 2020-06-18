@@ -24,7 +24,7 @@ export class SoftwareService {
       id : "covid-graphs",
       title : "Programmatically Graphing COVID-19", 
       summary : "Assisted my girlfriend in learning Python for an extra credit project by pulling current COVID19 data and graphing it using data visualization libraries.",
-      description: "The COVID19 Pandemic has become a big part of our lives in 2020. My girSlfriend was tasked with improving herself technologically in her finance course at her college, so I decided to teach her Python. We decided to create dynamically generated graphs of COVID data from different countries based on a report from the NYT and data sources from health organizations.",
+      description: "The COVID19 Pandemic has become a big part of our lives in 2020. My girlfriend was tasked with improving herself technologically in her finance course at her college, so I decided to teach her Python. We decided to create dynamically generated graphs of COVID data from different countries based on a report from the NYT and data sources from health organizations.",
       techStack: new Array("Python", "pandas", "Matplotlib"),
       type: "School Project",
       lastUpdated: "4/30/2020",
