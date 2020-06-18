@@ -8,6 +8,8 @@ import { SoftwareProjectCardComponent } from './software-project-card/software-p
 import { SoftwareProjectDetailsComponent } from './software-project-details/software-project-details.component';
 import { SoftwareService } from '../services/software.service';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+
 @NgModule({
 	declarations: [
 		SoftwareComponent,
@@ -25,7 +27,8 @@ import { SoftwareService } from '../services/software.service';
 	imports: [
 		CommonModule,
 		FormsModule,
-		RouterModule
+		RouterModule,
+		FontAwesomeModule
 	]
 })
 export class AppSoftwareModule {}

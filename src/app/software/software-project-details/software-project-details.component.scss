@@ -1,0 +1,142 @@
+@import 'variables';
+
+.project-details {
+	position: relative;
+	margin-top: 50px;
+	width: 100%
+}
+
+.project-container {
+	padding: 50px 0px;
+	display: flex;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0px auto;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@media(max-width: 48em){
+	.project-container {
+		padding: 30px 0px 10px 0px;
+	}
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+h1 {
+	margin: 0px auto;
+}
+
+@media(max-width: 48em){
+	h1 {
+		font-size: 50px;
+	}
+}
+
+.card {
+	padding: 1.5rem;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.details-header {
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: .5rem .5rem 1rem .5rem;
+	width: 100%
+}
+
+.details-body {
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: .5rem .5rem;
+	width: 100%
+}
+
+.details-left-panel {
+	margin: 0rem 1rem 0rem 0rem;
+	width: 25%
+}
+
+.details-right-panel {
+	//margin: 0rem 1rem 0rem auto;
+	width: 75%
+}
+
+.back-button {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.project-link {
+	position: relative;
+	padding: 8px 15px 8px 15px;
+	font-size: 27px;
+}
+
+h3 {
+	margin: 0rem auto 0rem 2rem;
+	font-size: 2vw;
+	text-align: center;
+}
+
+h5 {
+	margin-bottom: 1rem;
+}
+
+h6 {
+	margin-bottom: 1rem;
+}
+
+@media(max-width: 768px){
+	h3 {
+		font-size: 6vw;
+	}
+}
+
+@media (max-width: 512px){
+	.details-body{
+		flex-direction: column-reverse;
+		margin-top: 20px;
+	}
+	.details-left-panel{
+		width: 100%;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.details-right-panel {
+		width: 100%
+	}
+	.projectTechStack {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		list-style: outside none none;
+		padding: 0px 40px;
+
+	}
+	.projectTechStack li {
+		//could add a special font here
+		line-height: 1.75;
+		text-align: center;
+		display: inline;
+		font-size: 16px;
+	}
+	h3 {
+		font-size: 8vw;
+	}
+	h5 {
+		margin-bottom: 1.25rem;
+	}
+	
+	h6 {
+		margin-bottom: 2rem;
+	}
+}

@@ -1,4 +1,4 @@
-<div class="project-inner">
+<a class="project-inner text-decoration-none" [routerLink]=" ['/software', project.id]">
 	<header>
 		<!--
 				<div class="project-header">
@@ -10,7 +10,7 @@
 			{{ project.title }}
 		</h5>
 		<div class="project-desc">
-			<p> {{ project.description }} </p>
+			<p> {{ project.summary }} </p>
 		</div>
 	</header>
 	<footer>
@@ -20,4 +20,4 @@
 			</li>
 		</ul>
 	</footer>
-</div>
+</a>

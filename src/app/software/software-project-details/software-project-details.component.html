@@ -1,1 +1,54 @@
-<p>software-project-details works!</p>
+<div class="main-content-body">
+	<div class="project-container">
+		<h1>Software <span class="text-accent-color-2">Projects</span></h1>
+		<div class="project-details">
+			<div class="card">
+				<div class="details-header">
+					<div class="back-button">
+						<a [routerLink]="['/software']">
+							<fa-icon [icon]="faArrowCircleLeft"></fa-icon>
+						</a>
+					</div>
+					<h3 class="project-title">
+						{{ project.title }}
+					</h3>
+				</div>
+				<br>
+				<div class="details-body">
+					<div class="details-left-panel">
+						
+						<h5>Tech Used:</h5>
+						<ul class="projectTechStack">
+							<li *ngFor="let tech of project.techStack">
+								{{ tech }}
+							</li>
+						</ul>
+						<div *ngIf="project.type">
+							<h5>Type:</h5>
+							<h6>{{project.type}}</h6>
+						</div>
+						<div *ngIf="project.lastUpdated">
+							<h5>Last Updated:</h5>
+							<h6>{{project.lastUpdated}}</h6>
+						</div>
+						<div *ngIf="project.repo || project.location">
+							<h5>Links:</h5>
+							<div class="project-links">
+								<a class="project-link" *ngIf="project.location" href="{{project.location}}" target="_blank">
+									<fa-icon [icon]="faExternalLinkAlt"></fa-icon>
+								</a>
+								<a class="project-link" *ngIf="project.repo" href="{{project.repo}}" target="_blank">
+									<fa-icon [icon]="faGithub"></fa-icon>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="details-right-panel">
+						<h5>Description:</h5>
+						<p> {{ project.description }} </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
