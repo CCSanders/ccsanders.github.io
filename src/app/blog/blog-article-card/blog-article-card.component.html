@@ -1,0 +1,13 @@
+<a class="article-outer text-decoration-none" [routerLink]=" ['/blog', article.id]">
+	<div class="article-image" *ngIf="article.imgUrl">
+		<img src="{{ article.imgUrl }}">
+	</div>
+	<header class="article-inner">
+		<h5 class="article-title">
+			{{ article.title }}
+		</h5>
+		<div class="article-desc">
+			<p> {{ article.summary }} </p>
+		</div>
+	</header>
+</a>

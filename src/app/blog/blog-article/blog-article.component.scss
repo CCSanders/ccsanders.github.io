@@ -1,0 +1,28 @@
+:host {
+	display: block;
+}
+
+.articles-container {
+	padding: 50px 0px;
+	display: flex;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0px auto;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@media(max-width: 48em){
+	.articles-container {
+		padding: 30px 0px 10px 0px;
+	}
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+markdown {
+	display: block;
+	width: 100%;
+}

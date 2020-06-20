@@ -12,6 +12,7 @@ import { AcademiaComponent } from './academia/academia.component';
 import { BlogComponent } from './blog/blog.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BlogArticleComponent } from './blog/blog-article/blog-article.component';
 
 const routes: Routes = [
 	{
@@ -54,15 +55,53 @@ const routes: Routes = [
 				path: 'academia',
 				component: AcademiaComponent
 			},
+			{
+				path: 'blog',
+				component: RouterOutletComponent,
+				children: [
+					{
+						path: '',
+						component: BlogComponent
+					},
+					{
+						path: ':articleId',
+						component: BlogArticleComponent
+					}
+				]
+			}
 		]
 	},
 	{
-		path: 'blog',
-		component: BlogComponent
-	},
-	{
-		path: 'assets/resume.pdf',
-		redirectTo: '../assets/resume.pdf'
+		path: 'assets',
+		children: [
+			{
+				path: 'resume.pdf',
+				redirectTo: '../assets/resume.pdf'
+			},
+			{
+				path: 'imgs',
+				children: [
+					{
+						path: 'code-banner.jpg',
+						redirectTo: '../assets/imgs/code-banner.jpg'
+					}
+				]
+			},
+			{
+				path: 'md',
+				children: [
+
+					{
+						path: 'test-markdown-1.md',
+						redirectTo: '../assets/md/test-markdown-1.md'
+					},
+					{
+						path: 'test-markdown-2.md',
+						redirectTo: '../assets/md/test-markdown-2.md'
+					}
+				]
+			}
+		]
 	},
 	{
 		path: '**',

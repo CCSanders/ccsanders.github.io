@@ -149,6 +149,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+markdown p {
+	margin: 1rem 0rem !important;
+}
+
 .text-accent-color-1 {
   color: $theme-accent-color-1
 }

@@ -1,0 +1,40 @@
+@import 'variables';
+
+.article-outer {
+	position: relative;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: $theme-bg-color-tertiary;
+}
+
+.article-inner {
+	padding: 2rem 1.75rem;	
+	height: 66%;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+.article-title {
+	margin: 0px 0px 10px;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.article-desc {
+	font-size: 17px;
+}
+
+img {
+	width: 100%;
+	height: 10vw;
+    object-fit: cover;
+}
+
+.article-image {
+	width: 100%;
+}

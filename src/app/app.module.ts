@@ -15,6 +15,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 //3rd party modules
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { MarkdownModule } from 'ngx-markdown'
 
 //app modules
 import { AppComponent } from './app.component';
@@ -60,7 +61,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatIconModule,
     FontAwesomeModule,
     NgbModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
+    MarkdownModule.forRoot({loader: HttpClientModule})
   ],
   providers: [
     DataService,
