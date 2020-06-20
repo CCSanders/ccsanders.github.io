@@ -7,6 +7,7 @@ import { RouterOutletComponent } from './shared/router-outlet/router-outlet.comp
 import { SoftwareComponent } from './software/software.component';
 import { SoftwareProjectDetailsComponent } from './software/software-project-details/software-project-details.component';
 import { GamesComponent } from './games/games.component';
+import { GameProjectDetailsComponent } from './games/game-project-details/game-project-details.component'
 import { AcademiaComponent } from './academia/academia.component';
 import { BlogComponent } from './blog/blog.component';
 import { NgModule } from '@angular/core';
@@ -37,7 +38,17 @@ const routes: Routes = [
 			},
 			{
 				path: 'games',
-				component: GamesComponent
+				component: RouterOutletComponent,
+				children: [
+					{
+						path: '',
+						component: GamesComponent
+					},
+					{
+						path: ':projectId',
+						component: GameProjectDetailsComponent
+					}
+				]
 			},
 			{
 				path: 'academia',

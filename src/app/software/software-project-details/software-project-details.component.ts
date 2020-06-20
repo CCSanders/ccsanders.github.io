@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { SoftwareService } from 'src/app/services/software.service';
-import { SoftwareProjectModel } from '../models/software-project.model';
 import { faArrowCircleLeft, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+import { SoftwareService } from 'src/app/services/software.service';
+import { SoftwareProjectModel } from '../models/software-project.model';
 
 @Component({
   selector: 'app-software-project-details',
