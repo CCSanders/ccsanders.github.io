@@ -35,6 +35,18 @@ img {
     object-fit: cover;
 }
 
+@media (max-width: 768px){
+	img {
+		height: 25vw;
+	}
+}
+
+@media (max-width: 445px){
+	img {
+		height: 48vw;
+	}
+}
+
 .article-image {
 	width: 100%;
 }
