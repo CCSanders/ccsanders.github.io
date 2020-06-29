@@ -1,6 +1,35 @@
 <div class="main-content-body">
 	<div class="articles-container">
-		<h2>{{article.title}}</h2>
+		<header>
+			<div class="article-title">
+				<h1 class="uppercase">{{article.title}}</h1>
+			</div>
+			<div class="article-info">
+				<div class="article-author">
+					{{ article.author }}
+				</div>
+				<div class="article-time-info">
+					<div class="article-date">
+						{{ article.date }}
+					</div>
+					<div *ngIf="article.length">
+						<div class="dot-divider">
+						</div>
+						<div class="article-length">
+							{{ article.length }} min read
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="article-summary">
+				<p>
+					{{article.summary}}
+				</p>
+			</div>
+		</header>
+		<div class="article-header-image" *ngIf="article.headerImgUrl">
+			<img src="{{ article.headerImgUrl }}">
+		</div>
 		<markdown emoji src="{{article.mdSrc}}" (load)="onLoad()" ngPreserveWhitespaces></markdown>
 	</div>
 </div>

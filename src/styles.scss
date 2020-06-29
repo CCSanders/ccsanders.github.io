@@ -66,12 +66,10 @@ h1, h2, h3, h4, h5, h6,
 
 h1 {
   font-size: 6rem;
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 3.5rem;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -95,6 +93,10 @@ h6 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {

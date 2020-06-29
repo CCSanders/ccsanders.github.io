@@ -1,12 +1,15 @@
 <div class="main-content-body">
 	<div class="articles-container">
-		<h1>My <span class="text-accent-color-4">Blog</span></h1>
+		<h1 class="uppercase">My <span class="text-accent-color-4">Blog</span></h1>
+		<h4>This is a place where I put my opinions, guides, and other things happening in and around my life. Sometimes I let other people write stuff on here too!</h4>
 		<div class="articles">
 			<ng-container *ngFor="let article of articles; let i = index">
 				<app-blog-article-card *ngIf="i < initialShowCount || showAll" [article]="article"></app-blog-article-card>
 			</ng-container>
 		</div>
-		<button *ngIf="!showAll" (click)="showAll = true"><h5>Show More Articles</h5></button>
-		<button *ngIf="showAll" (click)="showAll = false"><h5>Show Fewer Articles</h5></button>
+		<div *ngIf="showMoreBtn">
+			<button *ngIf="!showAll" (click)="showAll = true"><h5>Show More Articles</h5></button>
+			<button *ngIf="showAll" (click)="showAll = false"><h5>Show Fewer Articles</h5></button>
+		</div>
 	</div>
 </div>

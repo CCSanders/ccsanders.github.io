@@ -1,6 +1,6 @@
 <div class="main-content-body">
 	<div class="project-container">
-		<h1>Software <span class="text-accent-color-1">Projects</span></h1>
+		<h1 class="uppercase">Software <span class="text-accent-color-1">Projects</span></h1>
 		<div class="projects">
 			<ng-container *ngFor="let project of projects; let i = index">
 				<app-software-project-card *ngIf="i < initialShowCount || showAll" [project]="project"></app-software-project-card>

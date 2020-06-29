@@ -1,5 +1,7 @@
 import { Component, OnInit, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
 import { BlogService } from 'src/app/services/blog.service';
 import { BlogArticleModel } from '../models/article.model';
 
@@ -16,7 +18,8 @@ export class BlogArticleComponent implements OnInit {
   constructor(
     private _elementRef: ElementRef<HTMLElement>,
     private _activatedRoute: ActivatedRoute,
-    private _blogService: BlogService
+    private _blogService: BlogService,
+    private _titleService: Title
   ) { }
 
   onLoad() {
@@ -33,6 +36,7 @@ export class BlogArticleComponent implements OnInit {
   ngOnInit(): void {
     this._activatedRoute.paramMap.subscribe(params => {
       this.article = this._blogService.getArticle(params.get('articleId'));
+      this._titleService.setTitle(this.article.title + " - Colin Sanders Blog");
     })
   }
 

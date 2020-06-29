@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 import { GameProjectModel } from './models/game-project.model';
 import { GamesService } from '../services/games.service';
 
@@ -13,10 +15,11 @@ export class GamesComponent implements OnInit {
   public showAll : boolean = false;
   public initialShowCount: number = 6;
 
-  constructor(public gamesService: GamesService) { }
+  constructor(public gamesService: GamesService, private _titleService: Title) { }
 
   ngOnInit() {
     this.projects = this.gamesService.getProjects();
+    this._titleService.setTitle("Games - Colin Sanders Portfolio");
   }
 
 }

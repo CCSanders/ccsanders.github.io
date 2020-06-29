@@ -25,7 +25,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/prismjs/themes/prism-okaidia.css",              
+              "node_modules/prismjs/themes/prism-okaidia.css",
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
               "node_modules/katex/dist/katex.min.css"
@@ -38,7 +38,6 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              
               "node_modules/marked/lib/marked.js",
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/plugins/highlight-keywords/prism-highlight-keywords.min.js",
@@ -165,5 +164,8 @@
     "@schematics/angular:component": {
       "styleext": "scss"
     }
+  },
+  "cli": {
+    "analytics": "b3e2ad4c-75a7-48e7-9eeb-976177de8253"
   }
 }

@@ -41,11 +41,16 @@ app-blog-article-card{
 	opacity: 1;
 	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 	transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-	border: 1px solid $theme-accent-color-4;
+	border: 1px solid $theme-bg-color-secondary;
 }
 
 h1 {
 	margin: 0px auto;
+}
+
+h4 {
+	margin: 10px auto 0px;
+	text-align: center;
 }
 
 @media(max-width: 48em){
