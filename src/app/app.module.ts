@@ -1,6 +1,6 @@
 //Angular modules
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, SecurityContext } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
@@ -62,7 +62,10 @@ import { AppRoutingModule } from './app-routing.module';
     FontAwesomeModule,
     NgbModule,
     RouterModule.forRoot([]),
-    MarkdownModule.forRoot({loader: HttpClientModule})
+    MarkdownModule.forRoot({
+      loader: HttpClientModule,
+      sanitize: SecurityContext.NONE
+    })
   ],
   providers: [
     DataService,

@@ -8,23 +8,12 @@ export class BlogService {
 
 //TODO : have this pulling data from an api 
 private data : BlogArticleModel[] = new Array(
-  {
-	id : "test-article-1",
-	title: "Test Article 1",
-	summary: "This is the first test article.",
-	mdSrc: "/assets/md/test-markdown-1.md",
-	headerImgUrl: "assets/imgs/code-banner.jpg",
-	author: "Colin Sanders",
-	date: "June 28",
-	length: 3,
-	featured: true
-  },
-  {
+	{
 	id : "new-pc-build",	
 	title: "My New PC: The ITX Monster",
-	summary: "This is the second test article.",
-	mdSrc: "/assets/md/test-markdown-2.md",
-	headerImgUrl: "assets/imgs/notebook-banner.jpg",
+	summary: "I have finally completed a long-time dream of mine: A DIY mini-ITX PC that has absolutely monster capabilities. Overview of the specs: i7 10700K, RTX 2080 Super, 32GB RAM, 1TB 970 Evo / 2TB HDD, Water Cooled, RGB, and most importantly: it fits right on my desk!",
+	mdSrc: "/assets/md/pc-build.md",
+	headerImgUrl: "/assets/imgs/keyboard-banner.png",
 	author: "Colin Sanders",
 	date: "June 28",
 	length: 5,

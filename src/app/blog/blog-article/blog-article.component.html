@@ -30,7 +30,7 @@
 		<div class="article-header-image" *ngIf="article.headerImgUrl">
 			<img src="{{ article.headerImgUrl }}">
 		</div>
-		<markdown emoji src="{{article.mdSrc}}" (load)="onLoad()" ngPreserveWhitespaces></markdown>
+		<markdown emoji src="{{article.mdSrc}}" ngPreserveWhitespaces></markdown>
 	</div>
 </div>
 

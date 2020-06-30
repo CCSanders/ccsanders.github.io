@@ -1,0 +1,26 @@
+### Introduction
+
+As a student with no real source of consistent income, I've always fallen back to Laptops and Pre-Builts for my gaming, development, and productivity needs. Having built other people custom PCs, I have always longed to put my own rig together. However, I was recently able to splurge on a custom build, with the parts list on PCPartPicker [here](https://pcpartpicker.com/b/qtn7YJ)! Coming from a MSI GS65 Stealth laptop (i7 8750h, 1070 MaxQ), this build is absolutely blowing me away. 
+
+### CPU
+A lot of the parts were hard to find or took awhile to get delivered as the part market is a bit out of wack currently. The i7 was probably not as smart as buying an Ryzen CPU, but I have wanted the flagship i7 for as long as I can remember wanting to build, so I went ahead and grabbed the new 10th Generation Socket 1200 10700k, taking about 3 weeks to arrive from B&H. It's about as fast as I could hope for, I'm not even really sure what to do with all this power. I'm not that upset about the lack of PCIe 4.0 support as I've read the benefits are not too apparent yet for the average consumer. I am content that I was able to buy a board with the new Socket 1200 so that I can always upgrade to a newer processor in the future.
+
+### Case, Water Cooler, & Fans
+I knew I wanted quality lighting and water-cooling in a small package, and thankfully NZXT offers all three! I went with the H210i tank in all-black. The case was very pleasant to build in with really good wire management options. The Kraken X53 was pretty easy to install on the front panel, only complaint was one of the wires for the lighting was pretty short and the tubes coming off the right of the CPU were pressing against the RAM a bit. The AER fans are really solid; daisy-chaining them was a little difficult as I didn't do it until the fans were already installed (and it's super hard to plug in the connector cables). Everything seems to be running very cool and very quiet, and the customization of the fan speeds and LEDs was very pleasant. The built-in Fan Controller was a little difficult to understand when working with the two AER fans, the Kraken, and the built-in LED strips of the case, but the new V2 controller comes with an extra LED input and the case comes with a USB2 header splitter so I was able to successfully connect everything with no loss of functionality like some of the H200i builds.
+
+### Storage
+Coming from a tiny SSD in my laptop, having both the 1TB 970 Evo and the 2TB Barracuda is euphoric. I have downloaded all software I use for development, all of my game and software projects, and about 1/3rd of my steam library and I haven't even begun to put a dent in the storage I have available. The 970 Evo is flying fast. By the time I started installing Windows, I was at the fully logged into the desktop in 7 minutes, something which I feel like used to take hours on worse machines.
+
+### RAM & MoBo
+No complaints on the AORUS ULTRA, except how close the RAM is to the CPU for the Kraken. Minor complaint though, the build-quality is really good and I loved not having to install an I/O shield. The BIOS is really nice too. The Vengreance RGB is quick, the LEDs are extremely bright, and having 32GB is extremely nice. 
+
+### PSU
+It was hard to find a decent (but not too overpriced) PSU. I originally ordered a 550W BQ! power supply, and I was a little nervous that it wasn't enough power even though there wasn't anything else for sale until double the price (and I was not trying to spend over $180 on a PSU). It just so happened that the BQ! PSU went backordered and it wasn't going to get here for weeks, and a (relatively) local Best Buy had a CXM650 come in-stock, the only one in 300+ miles. I went and bought it and no real complaints. I wish the modular cables were braided (only the MOBO and CPU Power are braided) but that's not a big deal. 
+
+### Graphics Card
+I haven't been able to throw anything at this GPU on Ultra that makes it run at any frame rate that is even close to not being silky smooth. The EVGA XC Ultra Gaming looks pretty nice in the case, even though I wanted to go with a Blower card (none in stock!). The card fit just about perfectly in the case with more that a half inch of clearing next to the Kraken in the front. The H210i had a really cool cover next to the expansion slots in the back of the case that you could push the I/O shield of the GPU through in order to set the GPU into the motherboard without much trouble. Case also came with a stand since the GPU is very heavy and not very supported. Downloading RDR2 currently to see if I can push the limits at 1440p 144HZ Ultra. I have a little bit of buyer's remorse on not being able to wait for the RTX 3080 cards that should be released later in the year, but I believe that the 2080 Super will be able to hold me over for a full generation of cards. 
+
+### Peripherals 
+I had a decently nice Acer 27inch 1080p monitor, but I decided I needed to get a screen that puts my system to work. I bought my first 2K 144HZ monitor in the Dell S2719DGF. The color on this monitor is fantastic, it's extremely crisp and smooth. And it looks great next to my fancy new build! 
+
+If you got this far, thanks for reading! I hope you enjoyed my ITX journey :)  
