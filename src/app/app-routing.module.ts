@@ -77,29 +77,6 @@ const routes: Routes = [
 			{
 				path: 'resume.pdf',
 				redirectTo: '../assets/resume.pdf'
-			},
-			{
-				path: 'imgs',
-				children: [
-					{
-						path: 'code-banner.jpg',
-						redirectTo: '../assets/imgs/code-banner.jpg'
-					}
-				]
-			},
-			{
-				path: 'md',
-				children: [
-
-					{
-						path: 'test-markdown-1.md',
-						redirectTo: '../assets/md/test-markdown-1.md'
-					},
-					{
-						path: 'test-markdown-2.md',
-						redirectTo: '../assets/md/test-markdown-2.md'
-					}
-				]
 			}
 		]
 	},
