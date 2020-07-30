@@ -23,6 +23,9 @@ export class TitleTagService {
     }
 
     public setSocialMediaTags(url: string, title: string, description: string, imageUrl: string) {
+        //TODO: REMOVE
+        return;
+        
         var realImageUrl = document.location.origin + imageUrl;
         var tags = [
             new MetaTag(this.urlMeta, url, true),
