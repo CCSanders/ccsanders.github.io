@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { TitleTagService } from '../services/title-tag.service';
 
 @Component({
   selector: 'app-academia',
@@ -8,10 +8,11 @@ import { Title } from '@angular/platform-browser';
 })
 export class AcademiaComponent implements OnInit {
 
-  constructor(private _titleService: Title) { }
+  constructor(private titleTagService: TitleTagService) { }
 
   ngOnInit() {
-    this._titleService.setTitle("Academia - Colin Sanders Portfolio");
+    this.titleTagService.setTitle("Academia - Colin Sanders Portfolio");
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/academia", "Academia - Colin Sanders Portfolio", "Academia - Colin Sanders Portfolio", '/assets/website-logo.png');
   }
 
 }

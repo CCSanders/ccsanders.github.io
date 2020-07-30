@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 
 import { GameProjectModel } from './models/game-project.model';
 import { GamesService } from '../services/games.service';
+import { TitleTagService } from '../services/title-tag.service';
 
 @Component({
   selector: 'app-games',
@@ -15,11 +15,12 @@ export class GamesComponent implements OnInit {
   public showAll : boolean = false;
   public initialShowCount: number = 6;
 
-  constructor(public gamesService: GamesService, private _titleService: Title) { }
+  constructor(public gamesService: GamesService, private titleTagService: TitleTagService) { }
 
   ngOnInit() {
     this.projects = this.gamesService.getProjects();
-    this._titleService.setTitle("Games - Colin Sanders Portfolio");
+    this.titleTagService.setTitle("Games - Colin Sanders Portfolio");
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/games", "Games - Colin Sanders Portfolio", "Games - Colin Sanders Portfolio", '/assets/website-logo.png');
   }
 
 }

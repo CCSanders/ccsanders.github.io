@@ -1,9 +1,9 @@
 import { Component, OnInit, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Title } from '@angular/platform-browser';
 
 import { BlogService } from 'src/app/services/blog.service';
 import { BlogArticleModel } from '../models/article.model';
+import { TitleTagService } from 'src/app/services/title-tag.service';
 
 @Component({
   selector: 'app-blog-article',
@@ -18,14 +18,16 @@ export class BlogArticleComponent implements OnInit {
   constructor(
     private _elementRef: ElementRef<HTMLElement>,
     private _activatedRoute: ActivatedRoute,
-    private _blogService: BlogService,
-    private _titleService: Title
+    private blogService: BlogService,
+    private titleTagService: TitleTagService
   ) { }
 
   ngOnInit(): void {
     this._activatedRoute.paramMap.subscribe(params => {
-      this.article = this._blogService.getArticle(params.get('articleId'));
-      this._titleService.setTitle(this.article.title + " - Colin Sanders Blog");
+      this.article = this.blogService.getArticle(params.get('articleId'));
+      
+      this.titleTagService.setTitle(this.article.title + " - Colin Sanders Blog");
+      this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/blog/" + this.article.id, this.article.title + " - Colin Sanders Blog", this.article.title + " - Colin Sanders Blog", this.article.headerImgUrl);
     })
   }
 

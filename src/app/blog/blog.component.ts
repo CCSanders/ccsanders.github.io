@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 
 import { BlogArticleModel } from './models/article.model';
 import { BlogService } from '../services/blog.service';
+import { TitleTagService } from '../services/title-tag.service';
 
 @Component({
   selector: 'app-blog',
@@ -16,10 +16,12 @@ export class BlogComponent implements OnInit{
   public showMoreBtn: boolean = false;
   public initialShowCount: number = 6;
 
-  constructor(public blogService: BlogService, private _titleService: Title) { }
+  constructor(public blogService: BlogService, private titleTagService: TitleTagService) { }
 
   ngOnInit() {
-    this._titleService.setTitle("Blog - Colin Sanders Portfolio");
+    this.titleTagService.setTitle("Blog - Colin Sanders Portfolio");
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/blog", "Blog - Colin Sanders Portfolio", "Blog - Colin Sanders Portfolio", '/assets/website-logo.png');
+
     this.articles = this.blogService.getArticles();
     
     if(this.articles.length > this.initialShowCount){

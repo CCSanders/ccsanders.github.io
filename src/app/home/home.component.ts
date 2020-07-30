@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+
+import { TitleTagService } from '../services/title-tag.service';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,11 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit{
 
-  constructor(private _titleService: Title) {}
+  constructor(private titleTagService: TitleTagService) {}
 
   ngOnInit(){
-    this._titleService.setTitle("Home - Colin Sanders Portfolio");
+    this.titleTagService.setTitle("Home - Colin Sanders Portfolio");
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/", "Home - Colin Sanders Portfolio", "Home - Colin Sanders Portfolio", '/assets/website-logo.png');
   }
 
 }
