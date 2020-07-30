@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { MetaTag } from '../models/meta-tag.model';
+import { Router } from '@angular/router';
 
 @Injectable({
     providedIn: 'root'
@@ -15,21 +16,22 @@ export class TitleTagService {
     private twitterTitleMeta: string = "twitter:text:title";
     private twitterImageMeta: string = "twitter:image";
 
-    constructor(private titleService: Title, private metaService: Meta) { }
+    constructor(private titleService: Title, private metaService: Meta, private router: Router) { }
 
     public setTitle(title: string) {
         this.titleService.setTitle(title);
     }
 
     public setSocialMediaTags(url: string, title: string, description: string, imageUrl: string) {
+        var realImageUrl = document.location.origin + imageUrl;
         var tags = [
             new MetaTag(this.urlMeta, url, true),
             new MetaTag(this.titleMeta, title, true),
             new MetaTag(this.descriptionMeta, description, true),
-            new MetaTag(this.imageMeta, imageUrl, true),
-            new MetaTag(this.secureImageMeta, imageUrl, true),
+            new MetaTag(this.imageMeta, realImageUrl, true),
+            new MetaTag(this.secureImageMeta, realImageUrl, true),
             new MetaTag(this.twitterTitleMeta, title, false),
-            new MetaTag(this.twitterImageMeta, imageUrl, false)
+            new MetaTag(this.twitterImageMeta, realImageUrl, false)
         ];
         this.setTags(tags);
     }

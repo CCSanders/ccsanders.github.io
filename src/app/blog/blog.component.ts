@@ -20,7 +20,7 @@ export class BlogComponent implements OnInit{
 
   ngOnInit() {
     this.titleTagService.setTitle("Blog - Colin Sanders Portfolio");
-    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/blog", "Blog - Colin Sanders Portfolio", "Blog - Colin Sanders Portfolio", '/assets/website-logo.png');
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/blog", "Blog - Colin Sanders Portfolio", "Blog - Colin Sanders Portfolio", '/assets/imgs/website-logo.png');
 
     this.articles = this.blogService.getArticles();
     

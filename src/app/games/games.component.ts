@@ -20,7 +20,7 @@ export class GamesComponent implements OnInit {
   ngOnInit() {
     this.projects = this.gamesService.getProjects();
     this.titleTagService.setTitle("Games - Colin Sanders Portfolio");
-    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/games", "Games - Colin Sanders Portfolio", "Games - Colin Sanders Portfolio", '/assets/website-logo.png');
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/games", "Games - Colin Sanders Portfolio", "Games - Colin Sanders Portfolio", '/assets/imgs/website-logo.png');
   }
 
 }

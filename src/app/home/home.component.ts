@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(){
     this.titleTagService.setTitle("Home - Colin Sanders Portfolio");
-    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/", "Home - Colin Sanders Portfolio", "Home - Colin Sanders Portfolio", '/assets/website-logo.png');
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/", "Home - Colin Sanders Portfolio", "Home - Colin Sanders Portfolio", '/assets/imgs/website-logo.png');
   }
 
 }

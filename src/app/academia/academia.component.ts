@@ -12,7 +12,7 @@ export class AcademiaComponent implements OnInit {
 
   ngOnInit() {
     this.titleTagService.setTitle("Academia - Colin Sanders Portfolio");
-    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/academia", "Academia - Colin Sanders Portfolio", "Academia - Colin Sanders Portfolio", '/assets/website-logo.png');
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/academia", "Academia - Colin Sanders Portfolio", "Academia - Colin Sanders Portfolio", '/assets/imgs/website-logo.png');
   }
 
 }

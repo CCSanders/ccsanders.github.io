@@ -19,7 +19,7 @@ export class SoftwareComponent implements OnInit {
 
   ngOnInit() {
     this.titleTagService.setTitle("Software - Colin Sanders Portfolio");
-    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/software", "Software - Colin Sanders Portfolio", "Software - Colin Sanders Portfolio", '/assets/website-logo.png');
+    this.titleTagService.setSocialMediaTags("https://ccsanders.github.io/software", "Software - Colin Sanders Portfolio", "Software - Colin Sanders Portfolio", '/assets/imgs/website-logo.png');
 
     this.projects = this.softwareService.getProjects();
   }

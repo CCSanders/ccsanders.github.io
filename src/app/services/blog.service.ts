@@ -35,7 +35,7 @@ export class BlogService {
 			title: "Welcome to my blog!",
 			summary: "Hello and welcome to my blog! I am Colin Sanders, a rising computer science senior at the University of Alabama and a software engineering intern at Lockheed Martin. This is the place where I'll document the things on my mind.",
 			mdSrc: "/assets/md/welcome.md",
-			headerImgUrl: "assets/imgs/notebook-banner.jpg",
+			headerImgUrl: "/assets/imgs/notebook-banner.jpg",
 			author: "Colin Sanders",
 			date: "June 28",
 			length: 3,
