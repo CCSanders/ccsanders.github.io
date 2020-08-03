@@ -10,6 +10,17 @@ export class GamesService {
 private dummyData : GameProjectModel[] = new Array(
     
   {
+    id : "ruin-escape",
+    title : "Ruin Escape",
+    summary : "A first-person fantasy puzzle game made in UE4 for the My First Game Jam: Summer 2020 event.",
+    description: "Ruin Escape is a first-person fantasy puzzle game made as part of the My First Game Jam: Summer 2020 event. I worked with friends Cameron Meyer and Andrew Sylvester, as we've been wanting to work on some outside-of-work projects together. The primary goal of the jam was to learn something new, so we all decided to dive into the Unreal Game Engine and take a crack at making a game. We had a blast working on this project and can't wait to do more in UE4.",
+    techStack: new Array("Unreal Engine 4", "C++"),
+    type: "Game Jam Submission",
+    lastUpdated: "7/31/2020",
+    repo: "https://github.com/ssm-studios/FGJProject",
+    location: "https://thebricktator.itch.io/ruin-escape"
+  },
+  {
     id : "atb-battlesystem",
     title : "ATB Battlesystem",
     summary : "A weekend project made in Unity trying to replicate a real-time turn-based battle system similar to Final Fantasy 13.",
